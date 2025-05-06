@@ -1,0 +1,114 @@
+body {
+    font-family: 'Roboto', sans-serif;
+      
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  main {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .news-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .news-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .news-content {
+    padding: 1rem;
+  }
+  
+  .news-content h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+  }
+  
+  .news-content a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .news-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .news-content p {
+    font-size: 14px;
+    color: #555;
+  }
+  .news-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .news-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  .search-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  #searchInput {
+    padding: 0.75rem 1rem;
+    width: 60%;
+    max-width: 500px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  body.dark {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+  body.dark .news-card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }
+  body.dark a {
+    color: #90caf9;
+  }
+  
+  #toggleTheme {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    padding: 0.5rem 1rem;
+    background: #444;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  
